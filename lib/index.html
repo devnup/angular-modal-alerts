@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html ng-app="editorSample">
+<html ng-app="sample">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Angular Modal Alerts - Sample</title>
     <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
-    <link href="./assets/css/style.min.css" type="text/css"/>
+    <link href="./dist/css/angular-modal-alerts.min.css" type="text/css"/>
+    <link href="./assets/css/sample.min.css" type="text/css"/>
 </head>
 <body ng-controller="SampleCtrl">
-
 
 <!-- Begin page content -->
 <div class="container">
     <div class="page-header">
         <h4><a href="https://devnup.com">devnup</a> / <a href="http://snippets.devnup.com">snippets</a> /</h4>
+
         <h1>angular modal alerts</h1>
     </div>
     <p class="lead">Utility service for generating and handling modal alerts based on Bootstrap inside AngularJS.</p>
@@ -22,6 +23,32 @@
 
     <p>You can get the repository at <a href="../sticky-footer-navbar">Devnup Official GitLab</a> or <a
             href="http://github.com/devnup/angular-modal-alerts">GitHub</a>.</p>
+
+    <div class="alerts-example">
+
+        <h3>Sample Alerts</h3>
+
+        <form>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 form-group text-center" style="margin-top: 20px">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" ng-click="info()">
+                        Info
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-4 form-group text-center" style="margin-top: 20px">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" ng-click="error()">
+                        Error
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-4 form-group text-center" style="margin-top: 20px">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" ng-click="input()">
+                        Input
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
 </div>
 
 <footer class="footer">
@@ -30,13 +57,14 @@
     </div>
 </footer>
 
+<ng-include src="'./dist/html/angular-modal-alerts.min.html'"></ng-include>
 
 <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="./dist/angular-modal-alerts.min.js"></script>
-
+<script type="text/javascript" src="./dist/js/angular-modal-alerts.min.js"></script>
 <script type="text/javascript" src="./sample.js"></script>
 
 </body>

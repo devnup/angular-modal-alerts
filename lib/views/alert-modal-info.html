@@ -1,0 +1,22 @@
+<div id="alert-info" class="alert-modal" ng-controller="AlertModalCtrl" ng-init="init('info')">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10-offset-1 col-lg-8 col-lg-offset-2 alert-modal-box animated zoomIn">
+                <div class="alert-modal-box-header">
+                    <button type="button" class="close" ng-click="close()">×</button>
+                    <h1 class="info"><i class="fa fa-info"></i>{{ alert.title || '' }}</h1>
+                </div>
+                <div class="alert-modal-box-body">
+                    <span ng-bind="alert.message"></span>
+                </div>
+                <div class="alert-modal-box-footer">
+                    <div class="text-center">
+                        <a class="btn btn-lg btn-primary-fill" ng-click="ok()">
+                            {{ alert.button && alert.button.ok ? alert.button.ok : 'OK' }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

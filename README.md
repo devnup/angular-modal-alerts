@@ -1,37 +1,66 @@
-angular-colors-util
+angular-modal-alerts
 ===================
 
 ### Installation
 
-Using Bower: ```bower install --save angular-colors-util```
+Using Bower: ```bower install --save angular-modal-alerts```
 
 ### Browser Usage
 
 Include the library in your HTML file:
 ```markup
 <!-- Angular Colors Util (Minified) -->
-<script type="text/javascript" src="bower_components/angular-colors-util/lib/dist/angular-colors-util.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-modal-alerts/lib/dist/angular-modal-alerts.min.js"></script>
 
 <!-- Angular Colors Util (Full) -->
-<script type="text/javascript" src="bower_components/angular-colors-util/lib/dist/angular-colors-util.js"></script>
+<script type="text/javascript" src="bower_components/angular-modal-alerts/lib/dist/angular-modal-alerts.js"></script>
 ```
 
 Include the module in your Angular app:
 ```javascript
 angular
-    .module('myApp', ['com.devnup.color'])
-    .controller('BodyCtrl', ['$scope', '$color', function($scope, $color) {
+    .module('myApp', ['com.devnup.alert'])
+    .controller('SampleCtrl', ['$scope', '$alert', function ($scope, $alert) {
 
-        $scope.count = 5;
+        $scope.info = function () {
 
-        $scope.colors = $color.generate(count).map(function(c) {
-            return {
-                color: c,
-                hover: $color.hover(c)
-            }
-        });
+            // Simple info alert
+            $alert.info({
+                title: 'Sample Alert',
+                message: 'This is a sample modal alert created using $alert service',
+                ok: function () {
+                    console.info('Clicked OK!');
+                }
+            });
+        };
 
-        console.info($scope.colors);
+        $scope.error = function () {
+
+            // Error alert
+            $alert.error({
+                title: 'Sample Error Alert',
+                message: 'This is a sample modal alert created using $alert service',
+                ok: function () {
+                    console.info('Clicked OK!');
+                }
+            });
+        };
+
+        $scope.input = function () {
+
+            // Input alert
+            $alert.input({
+
+                title: 'Sample Input Alert',
+                message: 'This is a sample modal alert to get user input',
+                input: 'default(input[value])',
+                placeholder: 'default(input[placeholder])',
+
+                submit: function (input) {
+                    console.info('Response: ' + input);
+                }
+            });
+        };
 
     }]);
 
@@ -39,8 +68,11 @@ angular
 
 ### Samples
 
-- [Sample Color Generator (HTML + JS)](http://angular-colors-util.snippets.devnup.com)
+- [Sample Alerts (HTML + JS)](http://angular-modal-alerts.snippets.devnup.com)
 
+### Documentation
+
+- [API Reference (JSDoc)](http://angular-modal-alerts.snippets.devnup.com/docs)
 
 ### Authors
 - [André Seiji](https://github.com/seijitamanaha) - [seiji@devnup.com](mailto:seiji@devnup.com)

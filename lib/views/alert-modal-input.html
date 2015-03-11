@@ -1,0 +1,51 @@
+<div id="alert-input" class="alert-modal" ng-controller="AlertModalCtrl" ng-init="init('input')">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10-offset-1 col-lg-8 col-lg-offset-2 alert-modal-box animated zoomIn">
+                <div class="alert-modal-box-header">
+                    <button type="button" class="close" ng-click="close()">×</button>
+                    <h1 class="info"><i class="fa fa-info"></i>{{ alert.title || '' }}</h1>
+                </div>
+                <div class="alert-modal-box-body">
+
+                    <p ng-bind="alert.message"></p>
+
+                    <form ng-submit="submit()" class="form-inline">
+
+                        <div class="form-group">
+
+                            <label for="alert-input">
+                                Email:
+                            </label>
+
+                            <!-- Enabled Input -->
+                            <input class="form-control input-md"
+                                   ng-if="!alert.disabled"
+                                   ng-model="alert.input"
+                                   placeholder="{{ alert.placeholder ? alert.placeholder : '' }}"
+                                   style="width: auto; min-width: 350px; margin-left: 20px"/>
+
+                            <!-- Disabled Input -->
+                            <input class="form-control input-md"
+                                   ng-if="alert.disabled"
+                                   ng-model="alert.input"
+                                   placeholder="{{ alert.placeholder ? alert.placeholder : '' }}"
+                                   style="width: auto; min-width: 350px; margin-left: 20px" disabled/>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="alert-modal-box-footer">
+                    <div class="text-center">
+                        <a class="btn btn-lg btn-default-fill" ng-click="cancel()">
+                            {{ alert.button && alert.button.cancel ? alert.button.cancel : 'Cancel' }}
+                        </a>
+                        <a class="btn btn-lg btn-primary-fill" ng-click="submit()">
+                            {{ alert.button && alert.button.submit ? alert.button.submit : 'Submit' }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

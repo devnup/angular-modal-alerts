@@ -4,6 +4,7 @@
   "description": "Utility service for generating and handling modal alerts based on Bootstrap inside AngularJS",
   "scripts": {
     "postinstall": "./scripts/postinstall.sh",
+    "grunt": "./node_modules/grunt-cli/bin/grunt watch",
     "start": "[ -z \"$PORT\" ] && echo \"PORT not set\" && export PORT=3000; cd lib/ && ../node_modules/http-server/bin/http-server -p \"$PORT\";"
   },
   "repository": {
@@ -17,8 +18,10 @@
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-htmlmin": "^0.4.0",
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-uglify": "^0.8.0",
     "grunt-contrib-watch": "^0.6.1",
