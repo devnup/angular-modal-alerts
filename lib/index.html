@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="editorSample">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Colors Util - Sample Editor</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" type="text/css"/>
+</head>
+<body ng-controller="EditorCtrl">
+
+<section id="colors" class="offset-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h1>devnup/ws distinct colors</h1>
+                <h5>Pick values:</h5>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-2 col-md-offset-3 form-group">
+                        <label for="number" class="control-label">Number:</label>
+                        <input type="number" class="form-control" id="number" value="20" placeholder="20">
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-2 form-group">
+                        <label for="saturation" class="control-label">Saturation:</label>
+                        <input type="number" class="form-control" id="saturation" value="70" placeholder="70">
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-2 form-group">
+                        <label for="value" class="control-label">Value:</label>
+                        <input type="number" class="form-control" id="value" value="80" placeholder="80">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 text-center">
+                        <button type="submit" class="btn btn-primary-fill btn-block btn-lg" ng-click="generateColors()">
+                            Gerar Cores
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div class="col-xs-6 text-center">
+            <h1>Normal:</h1>
+
+            <div id="colorsBox">
+                <!--Distinct Colors-->
+            </div>
+        </div>
+        <div class="col-xs-6 text-center">
+            <h1>Hover:</h1>
+
+            <div id="hoverColorsBox">
+                <!--Distinct Colors-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+
+<script type="text/javascript" src="./dist/angular-colors-util.min.js"></script>
+
+<script type="text/javascript" src="sample.js"></script>
+
+</body>
+</html>
