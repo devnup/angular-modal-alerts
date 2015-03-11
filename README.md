@@ -1,6 +1,8 @@
 angular-modal-alerts
 ===================
 
+[![build status](http://ci.devnup.com/projects/18/status.png?ref=master)](http://ci.devnup.com/projects/18?ref=master)
+
 ### Installation
 
 Using Bower: ```bower install --save angular-modal-alerts```
