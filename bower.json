@@ -1,11 +1,11 @@
 {
-  "name": "angular-colors-util",
+  "name": "angular-modal-alerts",
   "version": "0.0.1",
   "authors": [
     "Luis Brito <luis@devnup.com>",
     "André Seiji <seiji@devnup.com>"
   ],
-  "description": "Utility service for generating and handling colors inside AngularJS",
+  "description": "Utility service for generating and handling modal alerts based on Bootstrap inside AngularJS",
   "license": "MIT",
   "homepage": "snippets.devnup.com",
   "ignore": [

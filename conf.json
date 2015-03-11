@@ -9,7 +9,7 @@
     "excludePattern": "(^|\\/|\\\\)_"
   },
   "templates": {
-    "applicationName": "devnup/angular-colors-util - docs",
+    "applicationName": "devnup/angular-modal-alerts - docs",
     "cleverLinks": true,
     "monospaceLinks": true,
     "default": {

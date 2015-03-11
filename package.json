@@ -1,15 +1,14 @@
 {
-  "name": "angular-colors-util",
+  "name": "angular-modal-alerts",
   "version": "0.0.1",
-  "description": "Utility service for generating and handling colors inside AngularJS",
-  "main": "Gruntfile.js",
+  "description": "Utility service for generating and handling modal alerts based on Bootstrap inside AngularJS",
   "scripts": {
     "postinstall": "./scripts/postinstall.sh",
     "start": "[ -z \"$PORT\" ] && echo \"PORT not set\" && export PORT=3000; cd lib/ && ../node_modules/http-server/bin/http-server -p \"$PORT\";"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.devnup.com:devnup/angular-colors-util.git"
+    "url": "git@git.devnup.com:devnup/angular-modal-alerts"
   },
   "author": "Luis Brito <luis@devnup.com>",
   "license": "MIT",

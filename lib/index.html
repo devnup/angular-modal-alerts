@@ -2,67 +2,42 @@
 <html ng-app="editorSample">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Angular Colors Util - Sample Editor</title>
-    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" type="text/css"/>
+    <title>Angular Modal Alerts - Sample</title>
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="./assets/css/style.min.css" type="text/css"/>
 </head>
-<body ng-controller="EditorCtrl">
+<body ng-controller="SampleCtrl">
 
-<section id="colors" class="offset-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h1>devnup/ws distinct colors</h1>
-                <h5>Pick values:</h5>
-            </div>
-            <form>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-2 col-md-offset-3 form-group">
-                        <label for="number" class="control-label">Number:</label>
-                        <input type="number" class="form-control" id="number" value="20" placeholder="20">
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-2 form-group">
-                        <label for="saturation" class="control-label">Saturation:</label>
-                        <input type="number" class="form-control" id="saturation" value="70" placeholder="70">
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-2 form-group">
-                        <label for="value" class="control-label">Value:</label>
-                        <input type="number" class="form-control" id="value" value="80" placeholder="80">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 text-center">
-                        <button type="submit" class="btn btn-primary-fill btn-block btn-lg" ng-click="generateColors()">
-                            Gerar Cores
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <hr>
-        <div class="col-xs-6 text-center">
-            <h1>Normal:</h1>
 
-            <div id="colorsBox">
-                <!--Distinct Colors-->
-            </div>
-        </div>
-        <div class="col-xs-6 text-center">
-            <h1>Hover:</h1>
-
-            <div id="hoverColorsBox">
-                <!--Distinct Colors-->
-            </div>
-        </div>
+<!-- Begin page content -->
+<div class="container">
+    <div class="page-header">
+        <h4><a href="https://devnup.com">devnup</a> / <a href="http://snippets.devnup.com">snippets</a> /</h4>
+        <h1>angular modal alerts</h1>
     </div>
-</section>
+    <p class="lead">Utility service for generating and handling modal alerts based on Bootstrap inside AngularJS.</p>
 
-<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <p>For technical details about the angular module checkout the <a href="/docs">API Reference</a></p>
 
-<script type="text/javascript" src="./dist/angular-colors-util.min.js"></script>
+    <p>You can get the repository at <a href="../sticky-footer-navbar">Devnup Official GitLab</a> or <a
+            href="http://github.com/devnup/angular-modal-alerts">GitHub</a>.</p>
+</div>
 
-<script type="text/javascript" src="sample.js"></script>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">&copy; 2015 - <a href="https://devnup.com">Devnup Solutions</a> - All rights reserved</p>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+
+<script type="text/javascript" src="./dist/angular-modal-alerts.min.js"></script>
+
+<script type="text/javascript" src="./sample.js"></script>
 
 </body>
 </html>
