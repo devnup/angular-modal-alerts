@@ -1,7 +1,7 @@
-@import "./mixins";
-@import "./colors";
-@import "./fonts";
-@import "./zindex";
+@import "colors";
+@import "zindex";
+@import "mixins";
+@import "fonts";
 
 /* ======= Base ======= */
 * {
@@ -16,7 +16,6 @@ body, html {
 
 body {
   // Default Font Styles
-  font-family: @font-family-base;
   font-size: @font-size-base;
   line-height: @line-height-base;
   -moz-osx-font-smoothing: grayscale;
@@ -43,11 +42,6 @@ body {
   }
   h1, h2, h3, h4, h5, h6 {
     color: @heading-color;
-    .subtitle {
-      color: @text-color;
-      display: block;
-      font-family: @font-family-handwritten, cursive;
-    }
   }
   // Default Link Styles
   a {
@@ -87,10 +81,6 @@ body {
 .row {
   margin-left: 0;
   margin-right: 0;
-}
-
-.offset-header {
-  padding-top: 70px;
 }
 
 // Image Responsive
