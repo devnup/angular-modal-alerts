@@ -1,0 +1,133 @@
+@import "./mixins";
+@import "./colors";
+@import "./fonts";
+@import "./zindex";
+
+/* ======= Base ======= */
+* {
+  margin: 0;
+}
+
+body, html {
+  height: 100% !important;
+  min-height: 100% !important;
+  max-height: 100% !important;
+}
+
+body {
+  // Default Font Styles
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: @text-color;
+  // Default Heading Styles
+  h1 {
+    font-size: @font-size-h1;
+  }
+  h2 {
+    font-size: @font-size-h2;
+  }
+  h3 {
+    font-size: @font-size-h3;
+  }
+  h4 {
+    font-size: @font-size-h4;
+  }
+  h5 {
+    font-size: @font-size-h5;
+  }
+  h6 {
+    font-size: @font-size-h6;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: @heading-color;
+    .subtitle {
+      color: @text-color;
+      display: block;
+      font-family: @font-family-handwritten, cursive;
+    }
+  }
+  // Default Link Styles
+  a {
+    color: @brand-primary;
+    text-decoration: none !important;
+    .transition (all 0.4s ease-in-out);
+    &:hover {
+      color: darken(@brand-primary, 10%);
+    }
+  }
+  // Input Transition
+  .btn {
+    .transition (all 0.4s ease-in-out);
+  }
+  // Default Placeholder Styles
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    @gray;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    @gray;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    @gray;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    @gray;
+  }
+}
+
+// Container Bootstrap Fix
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Row Bootstrap Fix
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.offset-header {
+  padding-top: 70px;
+}
+
+// Image Responsive
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+
+  /* SOME CODE HERE */
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* SOME CODE HERE */
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px){
+
+  /* SOME CODE HERE */
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  /* SOME CODE HERE */
+
+}
+
+
+

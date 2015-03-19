@@ -117,6 +117,130 @@
 
 /* ======= Mixins ======= */
 /* ======= Colors ======= */
+/* ======= Fonts ======= */
+/* ======= Base ======= */
+* {
+  margin: 0;
+}
+body,
+html {
+  height: 100% !important;
+  min-height: 100% !important;
+  max-height: 100% !important;
+}
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #999999;
+}
+body h1 {
+  font-size: 30px;
+}
+body h2 {
+  font-size: 26px;
+}
+body h3 {
+  font-size: 23px;
+}
+body h4 {
+  font-size: 17px;
+}
+body h5 {
+  font-size: 14px;
+}
+body h6 {
+  font-size: 12px;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: #999999;
+}
+body h1 .subtitle,
+body h2 .subtitle,
+body h3 .subtitle,
+body h4 .subtitle,
+body h5 .subtitle,
+body h6 .subtitle {
+  color: #999999;
+  display: block;
+  font-family: "Grand Hotel", Helvetica, Arial, sans-serif, cursive;
+}
+body a {
+  color: #34acdc;
+  text-decoration: none !important;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+body a:hover {
+  color: #2190bd;
+}
+body .btn {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+body ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999999;
+}
+body :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999999;
+}
+body ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999999;
+}
+body :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999999;
+}
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.offset-header {
+  padding-top: 70px;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  /* SOME CODE HERE */
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* SOME CODE HERE */
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* SOME CODE HERE */
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* SOME CODE HERE */
+}
+
+/* ======= Mixins ======= */
+/* ======= Colors ======= */
 /* ======= Buttons ======= */
 .btn {
   display: inline-block;
@@ -956,6 +1080,8 @@ fieldset[disabled] .btn-login.active {
 }
 
 /* ======= Colors ======= */
+
+/* ======= Fonts ======= */
 
 /* ======= Mixins ======= */
 
