@@ -4,7 +4,7 @@
   },
   "source": {
     "include": ["./lib", "./README.md"],
-    "exclude": ["./lib/bower_components", "./lib/docs"],
+    "exclude": ["./lib/bower_components", "./lib/docs", "./lib/dist"],
     "includePattern": ".+\\.js(doc)?$",
     "excludePattern": "(^|\\/|\\\\)_"
   },

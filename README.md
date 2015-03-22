@@ -55,7 +55,7 @@ angular
 
                 title: 'Sample Input Alert',
                 message: 'This is a sample modal alert to get user input',
-                input: 'default(input[value])',
+                value: 'default(input[value])',
                 placeholder: 'default(input[placeholder])',
 
                 submit: function (input) {
