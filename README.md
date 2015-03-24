@@ -10,22 +10,16 @@ Using Bower: ```bower install --save angular-modal-alerts```
 ### Browser Usage
 
 1 - Include the JS library in your HTML file:
-```markup
-<!-- Angular Colors Util (Minified) -->
-<script type="text/javascript" src="bower_components/angular-modal-alerts/lib/dist/angular-modal-alerts.min.js"></script>
-
-<!-- Angular Colors Util (Full) -->
-<script type="text/javascript" src="bower_components/angular-modal-alerts/lib/dist/angular-modal-alerts.js"></script>
-```
-
 2 - Include the CSS and HTML dependencies in your HTML file:
 ```markup
 <head>
+  <!-- Angular Colors Util (Minified) -->
   <link rel="stylesheet" href="bower_components/angular-modal-alerts/lib/dist/css/angular-modal-alerts.min.css"/>
+  <script type="text/javascript" src="bower_components/angular-modal-alerts/lib/dist/js/angular-modal-alerts.min.js"></script>
 </head>
 <body>
   <!-- Angular Colors Util HTML (Minified) -->
-  <ng-include src="'bower_components/angular-modal-alerts/lib/dist/angular-modal-alerts.min.html'"></ng-include>
+  <ng-include src="'bower_components/angular-modal-alerts/lib/dist/html/angular-modal-alerts.min.html'"></ng-include>
 </body>
 ```
 
