@@ -1,6 +1,5 @@
 body {
   min-height: 100%;
-  margin-bottom: 60px;
 }
 
 html {
@@ -9,7 +8,7 @@ html {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 80px;
@@ -17,16 +16,17 @@ footer {
 }
 
 .alerts-example {
-
+  .row {
+    padding: 10px 0;
+  }
 }
 
-.container {
-
+.container.custom {
   width: auto;
   max-width: 680px;
   padding: 0 15px;
+}
 
-  .text-muted {
-    margin: 20px 0;
-  }
+.text-muted {
+  margin: 30px 5px;
 }

@@ -1007,7 +1007,7 @@ fieldset[disabled] .btn-login.active {
   color: #34acdc;
 }
 .alert-modal .alert-modal-box .alert-modal-box-header .close {
-  position: fixed;
+  position: absolute;
   top: 5px;
   right: 5px;
   color: #999999;

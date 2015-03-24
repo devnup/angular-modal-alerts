@@ -5,24 +5,31 @@
     <title>Angular Modal Alerts - Sample</title>
     <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="./bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="./dist/css/angular-modal-alerts.css" type="text/css" rel="stylesheet" />
     <link href="./assets/css/sample.css" type="text/css" rel="stylesheet" />
 </head>
 <body ng-controller="SampleCtrl">
 
 <!-- Begin page content -->
-<div class="container">
+<div class="container custom">
     <div class="page-header">
         <h4><a href="https://devnup.com">devnup</a> / <a href="http://snippets.devnup.com">snippets</a> /</h4>
 
         <h1>angular modal alerts</h1>
+        
     </div>
     <p class="lead">Utility service for generating and handling modal alerts based on Bootstrap inside AngularJS.</p>
 
     <p>For technical details about the angular module checkout the <a href="/docs">API Reference</a></p>
 
-    <p>You can get the repository at <a href="../sticky-footer-navbar">Devnup Official GitLab</a> or <a
+    <p style="margin-bottom: 20px;">You can get the repository at <a href="../sticky-footer-navbar">Devnup Official GitLab</a> or <a
             href="http://github.com/devnup/angular-modal-alerts">GitHub</a>.</p>
+
+    <iframe src="https://ghbtns.com/github-btn.html?user=devnup&repo=angular-modal-alerts&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=devnup&repo=angular-modal-alerts&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=devnup&repo=angular-modal-alerts&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=devnup&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
 
     <div class="alerts-example">
 
@@ -30,19 +37,36 @@
 
         <form>
             <div class="row">
-                <div class="col-xs-12 col-sm-4 form-group text-center" style="margin-top: 20px">
+                <div class="col-xs-12 col-sm-4 form-group text-center">
                     <button type="submit" class="btn btn-primary btn-block btn-lg" ng-click="info()">
                         Info
                     </button>
                 </div>
-                <div class="col-xs-12 col-sm-4 form-group text-center" style="margin-top: 20px">
-                    <button type="submit" class="btn btn-primary btn-block btn-lg" ng-click="error()">
+                <div class="col-xs-12 col-sm-4 form-group text-center">
+                    <button type="submit" class="btn btn-danger btn-block btn-lg" ng-click="error()">
                         Error
                     </button>
                 </div>
-                <div class="col-xs-12 col-sm-4 form-group text-center" style="margin-top: 20px">
+                <div class="col-xs-12 col-sm-4 form-group text-center">
                     <button type="submit" class="btn btn-primary btn-block btn-lg" ng-click="input()">
                         Input
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 form-group text-center">
+                    <button type="submit" class="btn btn-success btn-block btn-lg" ng-click="success()">
+                        Success
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-4 form-group text-center">
+                    <button type="submit" class="btn btn-warning btn-block btn-lg" ng-click="warning()">
+                        Warning
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-4 form-group text-center">
+                    <button type="submit" class="btn btn-danger btn-block btn-lg" ng-click="danger()">
+                        Danger
                     </button>
                 </div>
             </div>
@@ -52,7 +76,7 @@
 </div>
 
 <footer class="footer">
-    <div class="container">
+    <div class="container text-center">
         <p class="text-muted">&copy; 2015 - <a href="https://devnup.com">Devnup Solutions</a> - All rights reserved</p>
     </div>
 </footer>
