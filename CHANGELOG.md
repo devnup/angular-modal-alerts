@@ -1,1 +1,2 @@
-- 0.0.4 - Loader spinner
+- [v0.0.4] Loader spinner
+- [v0.0.5] Spinner configuration
