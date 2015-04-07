@@ -121,9 +121,9 @@
     </div>
 </div>
 <div id="alert-loading" class="" ng-controller="AlertModalCtrl" ng-init="init('loading')">
-    <img class="loader" alt="{{ alert.alt || 'Loading' }}"
-         src="{{ alert.image || 'assets/img/loader2.gif'}}"
-         ng-style="alert.style || {}"/>
+    <img class="loader" alt="{{ loading.alt || 'Loading' }}"
+         src="{{ loading.image || 'assets/img/loader2.gif'}}"
+         ng-style="loading.style"/>
 </div>
 <div id="alert-success" class="alert-modal" ng-controller="AlertModalCtrl" ng-init="init('success')">
     <div class="container">

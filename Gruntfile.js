@@ -18,9 +18,14 @@ module.exports = function (grunt) {
         separator: '\n'
       },
 
-      dist: {
-        src: ['lib/views/**.html'],
+      alerts: {
+        src: ['lib/src/views/**.html'],
         dest: 'lib/dist/html/angular-modal-alerts.html'
+      },
+
+      preloader: {
+        src: ['lib/src/preloader/**.html'],
+        dest: 'lib/dist/html/preloader.html'
       }
     },
 
@@ -67,7 +72,8 @@ module.exports = function (grunt) {
           collapseWhitespace: true
         },
         files: {
-          'lib/dist/html/angular-modal-alerts.min.html': 'lib/dist/html/angular-modal-alerts.html'
+          'lib/dist/html/angular-modal-alerts.min.html': 'lib/dist/html/angular-modal-alerts.html',
+          'lib/dist/html/preloader.min.html': 'lib/dist/html/preloader.html'
         }
       }
     },
@@ -75,7 +81,13 @@ module.exports = function (grunt) {
     clean: ["lib/dist/", "lib/assets/css/", "lib/docs"],
 
     watch: {
-      files: ['lib/assets/less/**', 'lib/src/**', 'lib/views/**', 'lib/index.html', 'lib/sample.js'],
+      files: [
+        'lib/src/**',
+        'lib/views/**',
+        'lib/index.html',
+        'lib/sample.js',
+        'lib/assets/less/**'
+      ],
       tasks: ['dev']
     }
   });
