@@ -2,3 +2,5 @@
 - [v0.0.5] Spinner configuration
 - [v0.0.6] Spinner configuration globally
 - [v0.0.6] Fix for spinner image url
+- [v0.0.7] Major fixes
+- [v0.0.8] preloader and fixes in loading
