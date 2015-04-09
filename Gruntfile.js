@@ -18,6 +18,7 @@ module.exports = function (grunt) {
         separator: '\n'
       },
 
+
       alerts: {
         src: ['lib/src/views/**.html'],
         dest: 'lib/dist/html/angular-modal-alerts.html'
@@ -27,6 +28,7 @@ module.exports = function (grunt) {
         src: ['lib/src/preloader/**.html'],
         dest: 'lib/dist/html/preloader.html'
       }
+
     },
 
     uglify: {
@@ -60,7 +62,7 @@ module.exports = function (grunt) {
       target: {
         files: {
           'lib/dist/css/angular-modal-alerts.min.css': ['lib/dist/css/angular-modal-alerts.css'],
-          'lib/assets/css/sample.min.css': ['lib/assets/css/css/sample.css']
+          'lib/assets/css/sample.min.css': ['lib/assets/css/sample.css']
         }
       }
     },

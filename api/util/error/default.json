@@ -1,0 +1,18 @@
+{
+  "INVALID_PARAMS": {
+    "status": 400,
+    "message": "Invalid parameters"
+  },
+  "FORBIDDEN": {
+    "status": 403,
+    "message": "Unauthorized"
+  },
+  "NOT_FOUND": {
+    "status": 404,
+    "message": "Not found"
+  },
+  "UNKNOWN": {
+    "status": 500,
+    "message": "Unknown error"
+  }
+}

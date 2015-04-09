@@ -1103,7 +1103,7 @@ fieldset[disabled] .btn-login.active {
   width: 100%;
   height: 100%;
   background-color: #fafafa;
-  z-index: 999999 !important;
+  z-index: 9999 !important;
 }
 .preloader img {
   position: absolute;

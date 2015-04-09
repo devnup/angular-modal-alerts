@@ -1,0 +1,38 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": [
+      "./lib",
+      "./README.md"
+    ],
+    "exclude": [
+      "./lib/bower_components",
+      "./lib/docs",
+      "./lib/dist"
+    ],
+    "includePattern": ".+\\.js(doc)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "templates": {
+    "applicationName": "devnup/snippet-sample - docs",
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "default": {
+      "outputSourceFiles": true
+    },
+    "linenums": true
+  },
+  "plugins": ["plugins/markdown"],
+  "markdown": {
+    "parser": "gfm",
+    "hardwrap": true
+  },
+  "opts": {
+    "destination": "./lib/docs",
+    "recurse": true,
+    "template": "./jsdoc/template",
+    "tutorials": "./jsdoc/tutorials"
+  }
+}
