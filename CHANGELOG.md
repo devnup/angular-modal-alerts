@@ -4,3 +4,6 @@
 - [v0.0.6] Fix for spinner image url
 - [v0.0.7] Major fixes
 - [v0.0.8] preloader and fixes in loading
+- [v0.0.9] Fix for boilerplates
+- [v0.0.10] Fix for package.json
+- [v0.0.11] Fix for grunt dependencies
