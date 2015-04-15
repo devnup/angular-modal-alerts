@@ -1,7 +1,7 @@
 <div id="alert-danger" class="alert-modal" ng-controller="AlertModalCtrl" ng-init="init('danger')">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-10-offset-1 col-lg-8 col-lg-offset-2 alert-modal-box animated zoomIn">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 alert-modal-box animated zoomIn">
                 <div class="alert-modal-box-header">
                     <button type="button" class="close" ng-click="close()">×</button>
                     <h1 class="danger"><i class="fa fa-warning"></i>{{ alert.title || '' }}</h1>
@@ -26,7 +26,7 @@
 <div id="alert-error" class="alert-modal" ng-controller="AlertModalCtrl" ng-init="init('error')">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-10-offset-1 col-lg-8 col-lg-offset-2 alert-modal-box animated zoomIn">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 alert-modal-box animated zoomIn">
                 <div class="alert-modal-box-header">
                     <button type="button" class="close" ng-click="close()">×</button>
                     <h1 class="danger"><i class="fa fa-warning"></i>{{ alert.title || '' }}</h1>
@@ -50,7 +50,7 @@
 <div id="alert-info" class="alert-modal" ng-controller="AlertModalCtrl" ng-init="init('info')">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-10-offset-1 col-lg-8 col-lg-offset-2 alert-modal-box animated zoomIn">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 alert-modal-box animated zoomIn">
                 <div class="alert-modal-box-header">
                     <button type="button" class="close" ng-click="close()">×</button>
                     <h1 class="info"><i class="fa fa-info"></i>{{ alert.title || '' }}</h1>
@@ -122,13 +122,13 @@
 </div>
 <div id="alert-loading" class="" ng-controller="AlertModalCtrl" ng-init="init('loading')">
     <img class="loader" alt="{{ alert.alt || 'Loading' }}"
-         src="{{ alert.image || 'assets/img/loader2.gif'}}"
+         src="{{ alert.image || 'http://static.devnup.com/snippets/loader.gif'}}"
          ng-style="alert.style || {}"/>
 </div>
 <div id="alert-success" class="alert-modal" ng-controller="AlertModalCtrl" ng-init="init('success')">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-10-offset-1 col-lg-8 col-lg-offset-2 alert-modal-box animated zoomIn">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 alert-modal-box animated zoomIn">
                 <div class="alert-modal-box-header">
                     <button type="button" class="close" ng-click="close()">×</button>
                     <h1 class="success"><i class="fa fa-check"></i>{{ alert.title || '' }}</h1>
@@ -150,7 +150,7 @@
 <div id="alert-warning" class="alert-modal" ng-controller="AlertModalCtrl" ng-init="init('warning')">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-10-offset-1 col-lg-8 col-lg-offset-2 alert-modal-box animated zoomIn">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 alert-modal-box animated zoomIn">
                 <div class="alert-modal-box-header">
                     <button type="button" class="close" ng-click="close()">×</button>
                     <h1 class="warning"><i class="fa fa-warning"></i>{{ alert.title || '' }}</h1>
