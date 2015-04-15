@@ -1,5 +1,5 @@
 <div id="alert-loading" class="" ng-controller="AlertModalCtrl" ng-init="init('loading')">
-    <img class="loader" alt="{{ loading.alt || 'Loading' }}"
-         src="{{ loading.image || 'assets/img/loader2.gif'}}"
-         ng-style="loading.style"/>
+    <img class="loader" alt="{{ alert.alt || 'Loading' }}"
+         src="{{ alert.image || 'http://static.devnup.com/snippets/loader.gif'}}"
+         ng-style="alert.style || {}"/>
 </div>
