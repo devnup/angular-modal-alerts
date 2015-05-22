@@ -8,3 +8,4 @@
 - [v0.0.10] Fix for package.json
 - [v0.0.11] Fix for grunt dependencies
 - [v0.0.12] Default gif loader on S3 and smaller modals
+- [v0.0.13] Meta theme for Android, footer and button fixes
