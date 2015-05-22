@@ -1,6 +1,6 @@
 {
   "name": "angular-modal-alerts",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Utility service for generating and handling modal alerts based on Bootstrap inside AngularJS",
   "scripts": {
     "start": "node app.js",
