@@ -1,4 +1,5 @@
 #!/bin/sh
+
 echo "Installing bower dependencies...";
 ./node_modules/bower/bin/bower install;
 

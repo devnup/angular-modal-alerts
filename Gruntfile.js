@@ -4,7 +4,6 @@ module.exports = function (grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-
     copy: {
       main: {
         src: 'lib/src/js/angular-modal-alerts.js',
@@ -14,10 +13,8 @@ module.exports = function (grunt) {
 
     concat: {
 
-      options: {
-        separator: '\n'
-      },
-
+      banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+      '<%= grunt.template.today("yyyy-mm-dd") %> */',
 
       alerts: {
         src: ['lib/src/views/**.html'],
@@ -33,6 +30,12 @@ module.exports = function (grunt) {
 
     uglify: {
       minify: {
+        options: {
+          mangle: false,
+          compress: false,
+          banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+          '<%= grunt.template.today("yyyy-mm-dd") %> */\n\n\'use strict\';\n'
+        },
         files: {
           'lib/dist/js/angular-modal-alerts.min.js': ['lib/dist/js/angular-modal-alerts.js']
         }
