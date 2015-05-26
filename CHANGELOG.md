@@ -10,3 +10,4 @@
 - [v0.0.12] Default gif loader on S3 and smaller modals
 - [v0.0.13] Meta theme for Android, footer and button fixes
 - [v0.0.14] Fixes for grunt uglify, input label param and margin
+- [v0.0.15] Removed preloader, custom modals based on URl and jQuery usages removed
