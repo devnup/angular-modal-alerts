@@ -1,0 +1,14 @@
+<div id="alert-custom" class="alert-modal" ng-controller="AlertModalCtrl" ng-init="init('modal')">
+    <div class="container" style="padding-bottom: 20px">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 alert-modal-box animated zoomIn">
+                <div class="alert-modal-box-header">
+                    <button type="button" class="close" ng-click="close()">×</button>
+                    <h1><i class="{{ alert.icon || ''}}"></i>{{ alert.title || '' }}</h1>
+                </div>
+                <div id="alert-custom-body" class="alert-modal-box-body"></div>
+                <div class="alert-modal-box-footer"></div>
+            </div>
+        </div>
+    </div>
+</div>
